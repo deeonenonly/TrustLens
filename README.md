@@ -791,5 +791,3 @@ GitHub:
 
 [https://github.com/deeonenonly/TrustLens](https://github.com/deeonenonly/TrustLens)
 
-```
-```
