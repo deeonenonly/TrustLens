@@ -1,0 +1,47 @@
+# Virtual environments
+int_venv/
+**/.venv/
+**/venv/
+**/venv_linux/
+
+# PyCharm
+.idea/
+**/.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Test/cache
+.pytest_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local environment/secrets
+.env
+.env.*
+!.env.example
+
+# Trained ML model weights/checkpoints
+trustlens-ai-api/models/layoutlmv3_ingredient/*.safetensors
+trustlens-ai-api/models/layoutlmv3_ingredient/*.pt
+trustlens-ai-api/models/layoutlmv3_ingredient/checkpoint-*/
+
+
+# Local backup versions
+*.before_*
+
+# Old unused Trust Report implementation
+trustlens-ai-api/trust_report/ollama/
+trustlens-ai-api/trust_report/rag/
+trustlens-ai-api/trust_report/utils/
+
+# Training-only artifact
+trustlens-ai-api/models/layoutlmv3_ingredient/training_args.bin

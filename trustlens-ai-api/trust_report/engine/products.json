@@ -1,0 +1,537 @@
+{
+  "ingredients": [
+    {
+      "ingredient": "Unbleached Enriched Flour",
+      "aliases": ["unbleached enriched flour", "enriched flour", "enriched wheat flour"],
+      "trust_score": 6,
+      "rationale": "Provides carbohydrates and added micronutrients but is generally less fibre-rich than whole-grain flour.",
+      "capacity": {
+        "adult": {"safe": "0-100 g/day", "moderate": "100-200 g/day", "unhealthy_flag": ">200 g/day as dominant refined grain source"},
+        "child": {"safe": "0-60 g/day", "moderate": "60-120 g/day", "unhealthy_flag": ">120 g/day as dominant refined grain source"},
+        "pregnant": {"safe": "0-100 g/day", "moderate": "100-200 g/day", "unhealthy_flag": ">200 g/day as dominant refined grain source"}
+      },
+      "remarks": "Refined grain is not inherently unsafe, but frequent heavy reliance is less favourable than a varied diet containing whole grains.",
+      "flags": ["REFINED_GRAIN", "GLUTEN", "WHEAT_ALLERGEN"]
+    },
+    {
+      "ingredient": "Wheat Flour",
+      "aliases": ["wheat flour", "flour"],
+      "trust_score": 6,
+      "rationale": "Common carbohydrate source; whole-grain versions are generally more favourable than highly refined flour.",
+      "capacity": {
+        "adult": {"safe": "0-100 g/day", "moderate": "100-200 g/day", "unhealthy_flag": ">200 g/day as dominant refined grain source"},
+        "child": {"safe": "0-60 g/day", "moderate": "60-120 g/day", "unhealthy_flag": ">120 g/day as dominant refined grain source"},
+        "pregnant": {"safe": "0-100 g/day", "moderate": "100-200 g/day", "unhealthy_flag": ">200 g/day as dominant refined grain source"}
+      },
+      "remarks": "Presence is generally acceptable; nutritional quality depends on whether it is whole grain or refined.",
+      "flags": ["GLUTEN", "WHEAT_ALLERGEN"]
+    },
+    {
+      "ingredient": "Niacin",
+      "aliases": ["niacin", "vitamin b3"],
+      "trust_score": 9,
+      "rationale": "Essential B vitamin involved in energy metabolism.",
+      "capacity": {
+        "adult": {"safe": "food-fortification levels", "moderate": "high supplemental levels", "unhealthy_flag": "excessive supplemental intake"},
+        "child": {"safe": "food-fortification levels", "moderate": "requires age-specific assessment", "unhealthy_flag": "excessive supplemental intake"},
+        "pregnant": {"safe": "normal dietary and prenatal levels", "moderate": "requires medical context", "unhealthy_flag": "excessive supplemental intake"}
+      },
+      "remarks": "Essential nutrient. Ingredient presence alone is generally favourable; exact quantity should be interpreted using age-specific nutrient guidance.",
+      "flags": ["ESSENTIAL_NUTRIENT"]
+    },
+    {
+      "ingredient": "Reduced Iron",
+      "aliases": ["reduced iron", "iron"],
+      "trust_score": 9,
+      "rationale": "Iron is essential for haemoglobin and oxygen transport.",
+      "capacity": {
+        "adult": {"safe": "normal fortified-food amount", "moderate": "high supplemental amount", "unhealthy_flag": "excessive iron supplementation"},
+        "child": {"safe": "age-appropriate dietary amount", "moderate": "requires age-specific assessment", "unhealthy_flag": "excessive iron supplementation"},
+        "pregnant": {"safe": "normal dietary or prescribed prenatal amount", "moderate": "requires medical context", "unhealthy_flag": "excessive supplementation without medical guidance"}
+      },
+      "remarks": "Essential nutrient, but safe limits depend on total dietary and supplemental iron rather than ingredient presence alone.",
+      "flags": ["ESSENTIAL_NUTRIENT"]
+    },
+    {
+      "ingredient": "Thiamine Mononitrate",
+      "aliases": ["thiamine mononitrate", "thiamin mononitrate", "vitamin b1"],
+      "trust_score": 10,
+      "rationale": "Essential vitamin supporting carbohydrate metabolism and nervous-system function.",
+      "capacity": {
+        "adult": {"safe": "normal food-fortification amount", "moderate": "not_quantity_based", "unhealthy_flag": "excessive supplemental use"},
+        "child": {"safe": "normal food-fortification amount", "moderate": "not_quantity_based", "unhealthy_flag": "excessive supplemental use"},
+        "pregnant": {"safe": "normal dietary amount", "moderate": "not_quantity_based", "unhealthy_flag": "excessive supplemental use"}
+      },
+      "remarks": "Generally favourable as a fortified nutrient.",
+      "flags": ["ESSENTIAL_NUTRIENT"]
+    },
+    {
+      "ingredient": "Riboflavin",
+      "aliases": ["riboflavin", "vitamin b2"],
+      "trust_score": 10,
+      "rationale": "Essential B vitamin involved in normal energy metabolism.",
+      "capacity": {
+        "adult": {"safe": "normal food-fortification amount", "moderate": "not_quantity_based", "unhealthy_flag": "excessive supplementation"},
+        "child": {"safe": "normal food-fortification amount", "moderate": "not_quantity_based", "unhealthy_flag": "excessive supplementation"},
+        "pregnant": {"safe": "normal dietary amount", "moderate": "not_quantity_based", "unhealthy_flag": "excessive supplementation"}
+      },
+      "remarks": "Generally favourable as a food nutrient.",
+      "flags": ["ESSENTIAL_NUTRIENT"]
+    },
+    {
+      "ingredient": "Folic Acid",
+      "aliases": ["folic acid", "folate"],
+      "trust_score": 10,
+      "rationale": "Essential for cell division and DNA synthesis and particularly important around early pregnancy.",
+      "capacity": {
+        "adult": {"safe": "normal fortified-food amount", "moderate": "high supplemental amount", "unhealthy_flag": "excessive supplementation"},
+        "child": {"safe": "age-appropriate dietary amount", "moderate": "requires age-specific assessment", "unhealthy_flag": "excessive supplementation"},
+        "pregnant": {"safe": "normal dietary or medically recommended prenatal amount", "moderate": "requires medical context", "unhealthy_flag": "excessive supplementation beyond medical guidance"}
+      },
+      "remarks": "Generally favourable; pregnancy requirements and supplementation should be handled separately from simple ingredient scoring.",
+      "flags": ["ESSENTIAL_NUTRIENT", "PREGNANCY_IMPORTANT"]
+    },
+    {
+      "ingredient": "Semisweet Chocolate Chips",
+      "aliases": ["semisweet chocolate chips", "chocolate chips"],
+      "trust_score": 4,
+      "rationale": "Usually combines added sugar and fat; cocoa content may provide beneficial compounds.",
+      "capacity": {
+        "adult": {"safe": "0-25 g/day", "moderate": "25-50 g/day", "unhealthy_flag": ">50 g/day"},
+        "child": {"safe": "0-15 g/day", "moderate": "15-30 g/day", "unhealthy_flag": ">30 g/day"},
+        "pregnant": {"safe": "0-25 g/day", "moderate": "25-50 g/day", "unhealthy_flag": ">50 g/day"}
+      },
+      "remarks": "Treat as an occasional sweet ingredient rather than a nutritional necessity.",
+      "flags": ["ADDED_SUGAR", "SATURATED_FAT_SOURCE"]
+    },
+    {
+      "ingredient": "Sugar",
+      "aliases": ["sugar", "sucrose", "added sugar"],
+      "trust_score": 3,
+      "rationale": "Added sugar is not nutritionally necessary and high intake can displace nutrient-dense foods and increase dental and metabolic risk.",
+      "capacity": {
+        "adult": {"safe": "0-25 g/day", "moderate": "25-50 g/day", "unhealthy_flag": ">50 g/day"},
+        "child": {"safe": "0-15 g/day", "moderate": "15-25 g/day", "unhealthy_flag": ">25 g/day"},
+        "pregnant": {"safe": "0-25 g/day", "moderate": "25-50 g/day", "unhealthy_flag": ">50 g/day"}
+      },
+      "remarks": "No body requirement for added sugar. Lower intake is preferable.",
+      "flags": ["ADDED_SUGAR", "HIGH_QUANTITY_FLAG"]
+    },
+    {
+      "ingredient": "Chocolate",
+      "aliases": ["chocolate"],
+      "trust_score": 5,
+      "rationale": "Health impact depends on cocoa content and the amount of added sugar and fat.",
+      "capacity": {
+        "adult": {"safe": "0-30 g/day", "moderate": "30-60 g/day", "unhealthy_flag": ">60 g/day"},
+        "child": {"safe": "0-20 g/day", "moderate": "20-40 g/day", "unhealthy_flag": ">40 g/day"},
+        "pregnant": {"safe": "0-30 g/day", "moderate": "30-60 g/day", "unhealthy_flag": ">60 g/day"}
+      },
+      "remarks": "Unsweetened high-cocoa chocolate is generally more favourable than heavily sweetened chocolate.",
+      "flags": ["CONTEXT_DEPENDENT"]
+    },
+    {
+      "ingredient": "Cocoa Butter",
+      "aliases": ["cocoa butter"],
+      "trust_score": 6,
+      "rationale": "Provides energy and fat but is relatively high in saturated fat.",
+      "capacity": {
+        "adult": {"safe": "0-10 g/day", "moderate": "10-20 g/day", "unhealthy_flag": ">20 g/day"},
+        "child": {"safe": "0-5 g/day", "moderate": "5-10 g/day", "unhealthy_flag": ">10 g/day"},
+        "pregnant": {"safe": "0-10 g/day", "moderate": "10-20 g/day", "unhealthy_flag": ">20 g/day"}
+      },
+      "remarks": "Not inherently unsafe, but large amounts can contribute substantially to total saturated-fat intake.",
+      "flags": ["SATURATED_FAT_SOURCE", "NON_ESSENTIAL"]
+    },
+    {
+      "ingredient": "Dextrose",
+      "aliases": ["dextrose", "glucose"],
+      "trust_score": 3,
+      "rationale": "Rapidly available sugar used as a sweetener or processing ingredient.",
+      "capacity": {
+        "adult": {"safe": "0-25 g/day", "moderate": "25-50 g/day", "unhealthy_flag": ">50 g/day"},
+        "child": {"safe": "0-15 g/day", "moderate": "15-25 g/day", "unhealthy_flag": ">25 g/day"},
+        "pregnant": {"safe": "0-25 g/day", "moderate": "25-50 g/day", "unhealthy_flag": ">50 g/day"}
+      },
+      "remarks": "The body uses glucose but does not require dextrose as an added food ingredient.",
+      "flags": ["ADDED_SUGAR", "HIGH_QUANTITY_FLAG"]
+    },
+    {
+      "ingredient": "Soy Lecithin",
+      "aliases": ["soy lecithin", "soya lecithin", "antioxidant soya lecithin", "lecithin"],
+      "trust_score": 8,
+      "rationale": "Common emulsifier generally used in small quantities.",
+      "capacity": {
+        "adult": {"safe": "normal food-use level", "moderate": "not_quantity_based", "unhealthy_flag": "allergy or intolerance context"},
+        "child": {"safe": "normal food-use level", "moderate": "not_quantity_based", "unhealthy_flag": "allergy or intolerance context"},
+        "pregnant": {"safe": "normal food-use level", "moderate": "not_quantity_based", "unhealthy_flag": "allergy or intolerance context"}
+      },
+      "remarks": "Low concern in typical food quantities; mainly relevant as an emulsifier.",
+      "flags": ["SOY_DERIVED"]
+    },
+    {
+      "ingredient": "Milk",
+      "aliases": ["milk", "milk solids", "milk powder", "dairy"],
+      "trust_score": 9,
+      "rationale": "Can provide protein, calcium and other nutrients.",
+      "capacity": {
+        "adult": {"safe": "normal dietary amount", "moderate": "individual dietary context", "unhealthy_flag": "not_quantity_based unless allergy or intolerance"},
+        "child": {"safe": "age-appropriate dietary amount", "moderate": "individual dietary context", "unhealthy_flag": "allergy or intolerance"},
+        "pregnant": {"safe": "normal dietary amount from safely processed milk", "moderate": "individual dietary context", "unhealthy_flag": "unpasteurized or unsafe product context"}
+      },
+      "remarks": "Nutritionally favourable for people who tolerate dairy; milk itself is not required if equivalent nutrients come from other foods.",
+      "flags": ["MILK_ALLERGEN"]
+    },
+    {
+      "ingredient": "Soybean Oil",
+      "aliases": ["soybean oil", "soy oil"],
+      "trust_score": 7,
+      "rationale": "Provides dietary fat, including unsaturated fatty acids, but is energy-dense.",
+      "capacity": {
+        "adult": {"safe": "0-15 g/day", "moderate": "15-30 g/day", "unhealthy_flag": ">30 g/day"},
+        "child": {"safe": "0-10 g/day", "moderate": "10-20 g/day", "unhealthy_flag": ">20 g/day"},
+        "pregnant": {"safe": "0-15 g/day", "moderate": "15-30 g/day", "unhealthy_flag": ">30 g/day"}
+      },
+      "remarks": "Generally more favourable than partially hydrogenated fat, but total dietary fat quality and quantity matter.",
+      "flags": ["ENERGY_DENSE", "SOY_DERIVED"]
+    },
+    {
+      "ingredient": "Partially Hydrogenated Cottonseed Oil",
+      "aliases": ["partially hydrogenated cottonseed oil", "partially hydrogenated oil", "hydrogenated cottonseed oil"],
+      "trust_score": 1,
+      "rationale": "May be a source of industrial trans fat and is a high-concern ingredient.",
+      "capacity": {
+        "adult": {"safe": "0 g/day", "moderate": "any detectable amount requires caution", "unhealthy_flag": ">0 g/day"},
+        "child": {"safe": "0 g/day", "moderate": "any detectable amount requires caution", "unhealthy_flag": ">0 g/day"},
+        "pregnant": {"safe": "0 g/day", "moderate": "any detectable amount requires caution", "unhealthy_flag": ">0 g/day"}
+      },
+      "remarks": "Flag strongly. Partially hydrogenated oils were the main dietary source of industrial trans fat and have been subject to major regulatory removal actions.",
+      "flags": ["HIGH_CONCERN", "PARTIALLY_HYDROGENATED", "POSSIBLE_TRANS_FAT"]
+    },
+    {
+      "ingredient": "High Fructose Corn Syrup",
+      "aliases": ["high fructose corn syrup", "hfcs", "corn syrup"],
+      "trust_score": 2,
+      "rationale": "Added sweetener contributing to free-sugar intake.",
+      "capacity": {
+        "adult": {"safe": "0-25 g/day", "moderate": "25-50 g/day", "unhealthy_flag": ">50 g/day"},
+        "child": {"safe": "0-15 g/day", "moderate": "15-25 g/day", "unhealthy_flag": ">25 g/day"},
+        "pregnant": {"safe": "0-25 g/day", "moderate": "25-50 g/day", "unhealthy_flag": ">50 g/day"}
+      },
+      "remarks": "No nutritional requirement as an added ingredient.",
+      "flags": ["ADDED_SUGAR", "HIGH_QUANTITY_FLAG"]
+    },
+    {
+      "ingredient": "Salt",
+      "aliases": ["salt", "iodized salt", "iodised salt", "sodium chloride"],
+      "trust_score": 5,
+      "rationale": "Sodium is essential, but excess intake is associated with raised blood pressure and other health concerns.",
+      "capacity": {
+        "adult": {"safe": "0-5 g/day", "moderate": "5-10 g/day", "unhealthy_flag": ">10 g/day"},
+        "child": {"safe": "0-2 g/day", "moderate": "2-5 g/day", "unhealthy_flag": ">5 g/day"},
+        "pregnant": {"safe": "0-5 g/day", "moderate": "5-10 g/day", "unhealthy_flag": ">10 g/day"}
+      },
+      "remarks": "Essential in small amounts. The total sodium contribution from the entire diet should be considered, not only this ingredient.",
+      "flags": ["ESSENTIAL_IN_SMALL_AMOUNTS", "HIGH_SODIUM_QUANTITY_FLAG"]
+    },
+    {
+      "ingredient": "Baking Soda",
+      "aliases": ["baking soda", "sodium bicarbonate", "bicarbonate of soda"],
+      "trust_score": 7,
+      "rationale": "Common leavening agent; generally low concern in normal food quantities.",
+      "capacity": {
+        "adult": {"safe": "normal food-use level", "moderate": "high direct intake", "unhealthy_flag": "not intended for unrestricted direct consumption"},
+        "child": {"safe": "normal food-use level", "moderate": "high direct intake", "unhealthy_flag": "not intended for unrestricted direct consumption"},
+        "pregnant": {"safe": "normal food-use level", "moderate": "high direct intake", "unhealthy_flag": "not intended for unrestricted direct consumption"}
+      },
+      "remarks": "Assess as a food-processing ingredient rather than treating the baking soda amount as a nutritional target.",
+      "flags": ["FOOD_ADDITIVE", "LEAVENING_AGENT", "SODIUM_SOURCE"]
+    },
+    {
+      "ingredient": "Natural and Artificial Flavor",
+      "aliases": ["natural and artificial flavor", "natural flavor", "artificial flavor", "natural flavour", "artificial flavour", "flavoring"],
+      "trust_score": 5,
+      "rationale": "A broad label that does not identify the exact flavouring substances.",
+      "capacity": {
+        "adult": {"safe": "not_quantity_based", "moderate": "exact composition required", "unhealthy_flag": "cannot determine from generic label alone"},
+        "child": {"safe": "not_quantity_based", "moderate": "exact composition required", "unhealthy_flag": "cannot determine from generic label alone"},
+        "pregnant": {"safe": "not_quantity_based", "moderate": "exact composition required", "unhealthy_flag": "cannot determine from generic label alone"}
+      },
+      "remarks": "Do not invent a precise toxicological judgment when the flavour composition is undisclosed.",
+      "flags": ["LIMITED_TRANSPARENCY"]
+    },
+    {
+      "ingredient": "Caramel Color",
+      "aliases": ["caramel color", "caramel colour", "caramel coloring"],
+      "trust_score": 6,
+      "rationale": "Used primarily for colour and provides no nutritional necessity.",
+      "capacity": {
+        "adult": {"safe": "normal regulated food-use level", "moderate": "requires exact caramel colour class", "unhealthy_flag": "cannot assign a universal gram threshold"},
+        "child": {"safe": "normal regulated food-use level", "moderate": "requires exact caramel colour class", "unhealthy_flag": "cannot assign a universal gram threshold"},
+        "pregnant": {"safe": "normal regulated food-use level", "moderate": "requires exact caramel colour class", "unhealthy_flag": "cannot assign a universal gram threshold"}
+      },
+      "remarks": "Exact assessment depends on the specific caramel-colour class.",
+      "flags": ["FOOD_COLOUR", "NON_ESSENTIAL"]
+    },
+    {
+      "ingredient": "Water",
+      "aliases": ["water"],
+      "trust_score": 10,
+      "rationale": "Essential for hydration and normal body function.",
+      "capacity": {
+        "adult": {"safe": "normal hydration intake", "moderate": "individual hydration context", "unhealthy_flag": "not ingredient-quantity-based"},
+        "child": {"safe": "normal age-appropriate hydration", "moderate": "individual hydration context", "unhealthy_flag": "not ingredient-quantity-based"},
+        "pregnant": {"safe": "normal hydration intake", "moderate": "individual hydration context", "unhealthy_flag": "not ingredient-quantity-based"}
+      },
+      "remarks": "Generally highly favourable in a food or beverage formulation.",
+      "flags": ["ESSENTIAL"]
+    },
+    {
+      "ingredient": "Orange Juice Concentrate",
+      "aliases": ["orange juice concentrate", "fruit juice concentrate", "orange concentrate"],
+      "trust_score": 6,
+      "rationale": "Contains fruit-derived components but contributes free sugars and less fibre than whole fruit.",
+      "capacity": {
+        "adult": {"safe": "0-150 g/day", "moderate": "150-250 g/day", "unhealthy_flag": ">250 g/day"},
+        "child": {"safe": "0-100 g/day", "moderate": "100-150 g/day", "unhealthy_flag": ">150 g/day"},
+        "pregnant": {"safe": "0-150 g/day", "moderate": "150-250 g/day", "unhealthy_flag": ">250 g/day"}
+      },
+      "remarks": "Whole fruit is generally preferable as a routine source of fruit because of fibre.",
+      "flags": ["FREE_SUGAR_SOURCE", "LOWER_FIBRE_THAN_WHOLE_FRUIT"]
+    },
+    {
+      "ingredient": "Citric Acid",
+      "aliases": ["acidity regulators (ins 330)", "ins 330", "e330", "citric acid"],
+      "trust_score": 8,
+      "rationale": "Common acidity regulator used widely in food.",
+      "capacity": {
+        "adult": {"safe": "normal regulated food-use level", "moderate": "frequent high-acidity exposure", "unhealthy_flag": "not universal gram-based"},
+        "child": {"safe": "normal regulated food-use level", "moderate": "frequent acidic-food exposure", "unhealthy_flag": "not universal gram-based"},
+        "pregnant": {"safe": "normal regulated food-use level", "moderate": "frequent high-acidity exposure", "unhealthy_flag": "not universal gram-based"}
+      },
+      "remarks": "Generally low concern as an additive; repeated acidic exposure can matter for dental health.",
+      "flags": ["ACIDITY_REGULATOR"]
+    },
+    {
+      "ingredient": "Ascorbic Acid",
+      "aliases": ["antioxidant(ins 300)", "antioxidant (ins 300)", "ins 300", "e300", "ascorbic acid", "vitamin c"],
+      "trust_score": 9,
+      "rationale": "Vitamin C is an essential nutrient and is also used as an antioxidant.",
+      "capacity": {
+        "adult": {"safe": "normal food-use amount", "moderate": "high supplemental amount", "unhealthy_flag": "excessive supplementation"},
+        "child": {"safe": "normal food-use amount", "moderate": "high supplemental amount", "unhealthy_flag": "excessive supplementation"},
+        "pregnant": {"safe": "normal dietary amount", "moderate": "high supplemental amount", "unhealthy_flag": "excessive supplementation"}
+      },
+      "remarks": "Generally favourable in normal food amounts.",
+      "flags": ["ESSENTIAL_NUTRIENT", "ANTIOXIDANT"]
+    },
+    {
+      "ingredient": "Sesame Oil",
+      "aliases": ["contain sesame oil", "sesame oil", "sesame"],
+      "trust_score": 7,
+      "rationale": "Provides dietary fat and is generally acceptable, but is energy-dense and sesame is an important allergen.",
+      "capacity": {
+        "adult": {"safe": "0-10 g/day", "moderate": "10-20 g/day", "unhealthy_flag": ">20 g/day"},
+        "child": {"safe": "0-5 g/day", "moderate": "5-10 g/day", "unhealthy_flag": ">10 g/day"},
+        "pregnant": {"safe": "0-10 g/day", "moderate": "10-20 g/day", "unhealthy_flag": ">20 g/day"}
+      },
+      "remarks": "Generally acceptable as a culinary oil unless sesame allergy is present.",
+      "flags": ["SESAME_ALLERGEN", "ENERGY_DENSE"]
+    },
+    {
+      "ingredient": "Cocoa Solids",
+      "aliases": ["cocoa solids", "cocoa", "cocoa powder"],
+      "trust_score": 8,
+      "rationale": "Can contribute cocoa-derived compounds without necessarily adding as much sugar as sweetened chocolate.",
+      "capacity": {
+        "adult": {"safe": "0-20 g/day", "moderate": "20-40 g/day", "unhealthy_flag": ">40 g/day requires product context"},
+        "child": {"safe": "0-10 g/day", "moderate": "10-20 g/day", "unhealthy_flag": ">20 g/day requires product context"},
+        "pregnant": {"safe": "0-20 g/day", "moderate": "20-40 g/day", "unhealthy_flag": ">40 g/day requires product context"}
+      },
+      "remarks": "Overall product assessment still depends on added sugar and fat.",
+      "flags": ["CONTEXT_DEPENDENT"]
+    },
+    {
+      "ingredient": "Leavening Agent INS 500(ii)",
+      "aliases": ["leavening agent (500(ii))", "500(ii)", "ins 500(ii)", "sodium bicarbonate"],
+      "trust_score": 7,
+      "rationale": "Technological leavening ingredient generally used in small amounts.",
+      "capacity": {
+        "adult": {"safe": "normal regulated food-use level", "moderate": "high direct intake", "unhealthy_flag": "not intended for unrestricted direct consumption"},
+        "child": {"safe": "normal regulated food-use level", "moderate": "high direct intake", "unhealthy_flag": "not intended for unrestricted direct consumption"},
+        "pregnant": {"safe": "normal regulated food-use level", "moderate": "high direct intake", "unhealthy_flag": "not intended for unrestricted direct consumption"}
+      },
+      "remarks": "Generally low concern when used for its intended food-processing purpose.",
+      "flags": ["FOOD_ADDITIVE", "LEAVENING_AGENT"]
+    },
+    {
+      "ingredient": "Yeast",
+      "aliases": ["yeast", "baker's yeast", "bakers yeast"],
+      "trust_score": 8,
+      "rationale": "Common food fermentation and leavening ingredient.",
+      "capacity": {
+        "adult": {"safe": "normal food amount", "moderate": "not_quantity_based", "unhealthy_flag": "allergy or intolerance context"},
+        "child": {"safe": "normal food amount", "moderate": "not_quantity_based", "unhealthy_flag": "allergy or intolerance context"},
+        "pregnant": {"safe": "normal food amount", "moderate": "not_quantity_based", "unhealthy_flag": "allergy or intolerance context"}
+      },
+      "remarks": "Generally low concern in cooked and baked foods.",
+      "flags": ["FERMENTATION_INGREDIENT"]
+    },
+    {
+      "ingredient": "Calcium Sulphate",
+      "aliases": ["nutrient (calcium sulphate)", "calcium sulphate", "calcium sulfate", "ins 516"],
+      "trust_score": 7,
+      "rationale": "Can serve technological or mineral-fortification purposes.",
+      "capacity": {
+        "adult": {"safe": "normal regulated food-use level", "moderate": "high supplemental intake", "unhealthy_flag": "requires total calcium context"},
+        "child": {"safe": "normal food-use level", "moderate": "requires age-specific assessment", "unhealthy_flag": "requires total calcium context"},
+        "pregnant": {"safe": "normal food-use level", "moderate": "requires total calcium context", "unhealthy_flag": "excessive supplementation"}
+      },
+      "remarks": "Calcium itself is essential, but the ingredient should not automatically be interpreted as providing a clinically meaningful calcium amount.",
+      "flags": ["MINERAL_SOURCE", "FOOD_ADDITIVE"]
+    },
+    {
+      "ingredient": "Enzyme",
+      "aliases": ["improver (enzyme)", "enzyme", "dough improver"],
+      "trust_score": 6,
+      "rationale": "Generic enzyme labels do not reveal the exact enzyme or processing details.",
+      "capacity": {
+        "adult": {"safe": "not_quantity_based", "moderate": "exact enzyme required", "unhealthy_flag": "cannot determine from generic label"},
+        "child": {"safe": "not_quantity_based", "moderate": "exact enzyme required", "unhealthy_flag": "cannot determine from generic label"},
+        "pregnant": {"safe": "not_quantity_based", "moderate": "exact enzyme required", "unhealthy_flag": "cannot determine from generic label"}
+      },
+      "remarks": "Do not invent a precise safety threshold without the exact enzyme identity.",
+      "flags": ["LIMITED_TRANSPARENCY"]
+    },
+    {
+      "ingredient": "Cheddar Cheese",
+      "aliases": ["cheddar cheese", "cheddar"],
+      "trust_score": 7,
+      "rationale": "Can provide protein and calcium but may also contribute significant saturated fat and sodium.",
+      "capacity": {
+        "adult": {"safe": "0-40 g/day", "moderate": "40-80 g/day", "unhealthy_flag": ">80 g/day"},
+        "child": {"safe": "0-25 g/day", "moderate": "25-50 g/day", "unhealthy_flag": ">50 g/day"},
+        "pregnant": {"safe": "0-40 g/day", "moderate": "40-80 g/day", "unhealthy_flag": ">80 g/day"}
+      },
+      "remarks": "Portion and total dietary sodium and saturated fat matter.",
+      "flags": ["MILK_ALLERGEN", "SATURATED_FAT_SOURCE", "SODIUM_SOURCE"]
+    },
+    {
+      "ingredient": "Emulsifier Blend INS 339(iii), INS 450(i), INS 452(i)",
+      "aliases": ["emulsifier (ins 339 (iii), ins 450 (i), ins 452 (i))", "ins 339(iii)", "ins 450(i)", "ins 452(i)", "emulsifier"],
+      "trust_score": 6,
+      "rationale": "Technological phosphate-based emulsifier and stabilizer blend.",
+      "capacity": {
+        "adult": {"safe": "normal regulated food-use level", "moderate": "requires exact concentration", "unhealthy_flag": "cannot assign universal gram threshold"},
+        "child": {"safe": "normal regulated food-use level", "moderate": "requires exact concentration", "unhealthy_flag": "cannot assign universal gram threshold"},
+        "pregnant": {"safe": "normal regulated food-use level", "moderate": "requires exact concentration", "unhealthy_flag": "cannot assign universal gram threshold"}
+      },
+      "remarks": "Presence alone does not establish harm; exact quantity and formulation matter.",
+      "flags": ["FOOD_ADDITIVE", "PHOSPHATE_ADDITIVE"]
+    },
+    {
+      "ingredient": "Carrageenan and Xanthan Gum Stabilizer Blend",
+      "aliases": ["stabilizer (ins 407, ins 415)", "ins 407", "ins 415", "carrageenan", "xanthan gum", "stabilizer"],
+      "trust_score": 6,
+      "rationale": "Texture and stabilizing ingredients generally used in small quantities.",
+      "capacity": {
+        "adult": {"safe": "normal regulated food-use level", "moderate": "individual digestive tolerance", "unhealthy_flag": "not universal gram threshold"},
+        "child": {"safe": "normal regulated food-use level", "moderate": "individual digestive tolerance", "unhealthy_flag": "not universal gram threshold"},
+        "pregnant": {"safe": "normal regulated food-use level", "moderate": "individual digestive tolerance", "unhealthy_flag": "not universal gram threshold"}
+      },
+      "remarks": "Generally a formulation-level consideration rather than a major nutritional ingredient.",
+      "flags": ["FOOD_ADDITIVE", "TEXTURE_AGENT"]
+    },
+    {
+      "ingredient": "Sorbic Acid",
+      "aliases": ["preservative (ins 200)", "ins 200", "e200", "sorbic acid"],
+      "trust_score": 6,
+      "rationale": "Preservative used to inhibit spoilage and extend shelf life.",
+      "capacity": {
+        "adult": {"safe": "normal regulated food-use level", "moderate": "requires exact concentration", "unhealthy_flag": "not universal gram threshold"},
+        "child": {"safe": "normal regulated food-use level", "moderate": "requires exact concentration", "unhealthy_flag": "not universal gram threshold"},
+        "pregnant": {"safe": "normal regulated food-use level", "moderate": "requires exact concentration", "unhealthy_flag": "not universal gram threshold"}
+      },
+      "remarks": "Technological ingredient; presence should not automatically be treated as unhealthy.",
+      "flags": ["PRESERVATIVE", "FOOD_ADDITIVE"]
+    },
+    {
+      "ingredient": "Spices and Condiments",
+      "aliases": ["spices & condiments", "spices and condiments", "spices"],
+      "trust_score": 8,
+      "rationale": "Usually flavour ingredients and may contribute plant-derived compounds.",
+      "capacity": {
+        "adult": {"safe": "normal culinary amount", "moderate": "very high amount or unknown blend", "unhealthy_flag": "allergen or excessive-sodium context"},
+        "child": {"safe": "normal age-appropriate culinary amount", "moderate": "strong spice or unknown blend", "unhealthy_flag": "allergen or excessive-sodium context"},
+        "pregnant": {"safe": "normal culinary amount", "moderate": "very high amount or unknown blend", "unhealthy_flag": "specific ingredient-dependent"}
+      },
+      "remarks": "Exact assessment depends on the specific spices, condiments and salt content.",
+      "flags": ["INGREDIENT_GROUP", "LIMITED_SPECIFICITY"]
+    },
+    {
+      "ingredient": "Microcrystalline Cellulose",
+      "aliases": ["stabilizer [460(i)]", "460(i)", "ins 460(i)", "e460(i)", "microcrystalline cellulose"],
+      "trust_score": 7,
+      "rationale": "Common cellulose-based texture or stabilizing ingredient.",
+      "capacity": {
+        "adult": {"safe": "normal regulated food-use level", "moderate": "high amount may affect digestive tolerance", "unhealthy_flag": "not universal gram threshold"},
+        "child": {"safe": "normal regulated food-use level", "moderate": "high amount may affect digestive tolerance", "unhealthy_flag": "not universal gram threshold"},
+        "pregnant": {"safe": "normal regulated food-use level", "moderate": "high amount may affect digestive tolerance", "unhealthy_flag": "not universal gram threshold"}
+      },
+      "remarks": "Generally low concern as a food texture ingredient.",
+      "flags": ["FOOD_ADDITIVE", "CELLULOSE"]
+    },
+    {
+      "ingredient": "Malted Barley Flour",
+      "aliases": ["malted barley flour", "barley flour", "malted barley"],
+      "trust_score": 7,
+      "rationale": "Grain-derived ingredient used for flavour and baking properties.",
+      "capacity": {
+        "adult": {"safe": "0-100 g/day", "moderate": "100-200 g/day", "unhealthy_flag": ">200 g/day as dominant refined grain source"},
+        "child": {"safe": "0-60 g/day", "moderate": "60-120 g/day", "unhealthy_flag": ">120 g/day as dominant refined grain source"},
+        "pregnant": {"safe": "0-100 g/day", "moderate": "100-200 g/day", "unhealthy_flag": ">200 g/day as dominant refined grain source"}
+      },
+      "remarks": "Generally acceptable unless gluten must be avoided.",
+      "flags": ["GLUTEN", "BARLEY"]
+    },
+    {
+      "ingredient": "Degermed Yellow Cornmeal",
+      "aliases": ["degermed yellow cornmeal", "yellow cornmeal", "cornmeal", "corn flour"],
+      "trust_score": 7,
+      "rationale": "Provides carbohydrate but processing can reduce some components compared with whole grain.",
+      "capacity": {
+        "adult": {"safe": "0-100 g/day", "moderate": "100-200 g/day", "unhealthy_flag": ">200 g/day as dominant refined grain source"},
+        "child": {"safe": "0-60 g/day", "moderate": "60-120 g/day", "unhealthy_flag": ">120 g/day as dominant refined grain source"},
+        "pregnant": {"safe": "0-100 g/day", "moderate": "100-200 g/day", "unhealthy_flag": ">200 g/day as dominant refined grain source"}
+      },
+      "remarks": "Generally acceptable grain ingredient.",
+      "flags": ["GRAIN", "PROCESSED_GRAIN"]
+    },
+    {
+      "ingredient": "Sodium Acid Pyrophosphate",
+      "aliases": ["sodium acid pyrophosphate", "sapp", "ins 450(i)", "e450(i)"],
+      "trust_score": 6,
+      "rationale": "Common baking and leavening ingredient.",
+      "capacity": {
+        "adult": {"safe": "normal regulated food-use level", "moderate": "requires exact concentration", "unhealthy_flag": "not universal gram threshold"},
+        "child": {"safe": "normal regulated food-use level", "moderate": "requires exact concentration", "unhealthy_flag": "not universal gram threshold"},
+        "pregnant": {"safe": "normal regulated food-use level", "moderate": "requires exact concentration", "unhealthy_flag": "not universal gram threshold"}
+      },
+      "remarks": "Food-additive assessment should use additive concentration rather than a general daily gram cutoff.",
+      "flags": ["FOOD_ADDITIVE", "PHOSPHATE_ADDITIVE", "LEAVENING_AGENT"]
+    },
+    {
+      "ingredient": "Honey Powder",
+      "aliases": ["honey powder", "honey"],
+      "trust_score": 4,
+      "rationale": "Primarily a sugar source despite being derived from honey.",
+      "capacity": {
+        "adult": {"safe": "0-25 g/day", "moderate": "25-50 g/day", "unhealthy_flag": ">50 g/day"},
+        "child": {"safe": "0-15 g/day", "moderate": "15-25 g/day", "unhealthy_flag": ">25 g/day"},
+        "pregnant": {"safe": "0-25 g/day", "moderate": "25-50 g/day", "unhealthy_flag": ">50 g/day"}
+      },
+      "remarks": "Treat primarily as a sweetener for health scoring. Honey is not suitable for infants under 12 months.",
+      "flags": ["FREE_SUGAR_SOURCE", "INFANT_WARNING"]
+    }
+  ]
+}

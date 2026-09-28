@@ -1,0 +1,4 @@
+from product_details.wrapper.product_details_wrapper import ProductDetailsWrapper
+
+
+product_details_wrapper = ProductDetailsWrapper()
