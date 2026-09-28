@@ -1,4 +1,4 @@
-````markdown
+
 # TrustLens – AI Powered Packaged Product Analysis Platform
 
 TrustLens is an AI-powered platform for analyzing packaged products from their ingredient information.
