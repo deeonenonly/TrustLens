@@ -791,7 +791,8 @@ GitHub:
 
 [https://github.com/deeonenonly/TrustLens](https://github.com/deeonenonly/TrustLens)
 
+---
 
 # Team 
 
-Collaborated with a group of 4 student members. I focused on the TrustReport API and ingredient list extraction logic. Other team members were Anoushka Pawar(Ollama+RAG), Shravani Patwardhan(Frontend), Sonal Wadkar(Backend)
+Collaborated with a group of 3 student members. I focused on the TrustReport API and ingredient list extraction logic. Other team members were Anoushka Pawar(Ollama+RAG), Shravani Patwardhan(Frontend), Sonal Wadkar(Backend)
